@@ -32,3 +32,13 @@ function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
   }
+
+//Phone mode toggle
+function phoneMode() {
+  var theme = document.getElementsByTagName('link')[0];
+  if (theme.getAttribute('href') == 'css/style.css') {
+    theme.setAttribute('href', 'css/phone.css');
+} else {
+    theme.setAttribute('href', 'css/style.css');
+}
+}
